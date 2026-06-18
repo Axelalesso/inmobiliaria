@@ -9,7 +9,7 @@ import Sidebar from "../../components/sidebar/sidebar";
 import { useInView } from "react-intersection-observer";
 import HeroSlider from "../../components/heroslider/heroslider";
 
-import "./Home.css";
+import "./home.css";
 
 
 
