@@ -34,7 +34,7 @@ function App() {
 
       <Route
         path="/contacto"
-        element={<Contacto />}
+        element={<Contact/>}
       />
 
       <Route
