@@ -8,7 +8,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import Sidebar from "../../components/sidebar/sidebar";
 import { useInView } from "react-intersection-observer";
 import HeroSlider from "../../components/heroslider/heroslider";
-import "./home.css";
+
+import "./Home.css";
 
 
 
