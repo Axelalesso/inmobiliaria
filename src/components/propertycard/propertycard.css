@@ -1,0 +1,46 @@
+.prop-card {
+  background: white;
+  font-family: 'Inter', sans-serif;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.prop-card:hover {
+  transform: translateY(-5px);
+}
+
+.property-image {
+  width: 100%;
+  height: 280px;
+
+  object-fit: cover;
+}
+
+.prop-body {
+  padding: 1.5rem;
+}
+
+.prop-badge {
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+
+  top: 15px;
+  left: 15px;
+
+  background: #c9a84c;
+
+  color: white;
+
+  padding: 6px 12px;
+}
+
+.prop-price {
+  margin-top: 1rem;
+  font-family: 'Inter', sans-serif;
+
+  font-size: 1.5rem;
+
+  font-weight: bold;
+}

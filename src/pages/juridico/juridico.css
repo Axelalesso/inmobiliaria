@@ -1,0 +1,437 @@
+/* ==========================================================================
+   VARIABLES & TOKENS DE DISEÑO (Elegancia & Minimalismo)
+   ========================================================================== */
+:root {
+  --color-bg-light: #fbfbfa;       /* Blanco hueso/tiza, suave a la vista */
+  --color-bg-dark: #11141a;        /* Azul marino oscuro/casi negro */
+  --color-bg-card: #ffffff;
+  --color-text-main: #000000;      /* Negro tipográfico premium */
+  --color-text-muted: #626770;    /* Gris refinado para descripciones */
+  --color-accent: #c5a880;        /* Oro champagne sutil, no chillón */
+  --color-accent-hover: #b3946b;
+  --color-border: rgba(28, 30, 33, 0.08);
+  
+  --font-serif: 'Playfair Display', 'Didot', 'Georgia', serif;
+  --font-sans: 'Inter', '-apple-system', BlinkMacSystemFont, sans-serif;
+  --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   ESTILOS GENERALES DE LA PÁGINA
+   ========================================================================== */
+.juridico-page {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-main);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtítulos pequeños/Categorías (Eyebrow) */
+.juridico-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 1.25rem;
+}
+
+.juridico-eyebrow--light {
+  color: var(--color-accent);
+  opacity: 0.9;
+}
+
+/* Títulos principales de sección */
+.juridico-services__header h2,
+.juridico-diferencial__label h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   SECCIÓN HERO
+   ========================================================================== */
+.juridico-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 4rem 2rem;
+  background-color: #0d0f13; /* Fondo oscuro profundo exclusivo para el Hero */
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Efecto sutil de textura/ruido de fondo */
+.juridico-hero__noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'%3E%3C/rect%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.juridico-hero__content {
+  max-width: 850px;
+  z-index: 2;
+}
+
+.juridico-hero__title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+
+.juridico-hero__title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent);
+}
+
+.juridico-hero__lead {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+}
+
+/* Stats del Hero */
+.juridico-hero__stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3rem;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-stat__num {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--color-accent);
+  margin-bottom: 0.25rem;
+}
+
+.hero-stat__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-stat__divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Indicador de scroll animado */
+.juridico-hero__scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+}
+
+.juridico-hero__scroll-hint span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--color-accent);
+  animation: scroll-down 2s infinite ease-in-out;
+}
+
+@keyframes scroll-down {
+  0% { transform: translateY(-100%); }
+  80%, 100% { transform: translateY(100%); }
+}
+
+/* ==========================================================================
+   SECCIONES DE SERVICIOS (VENTA Y ALQUILER)
+   ========================================================================== */
+.juridico-services {
+  padding: 8rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Variación de fondo gris/oscuro sutil para Alquileres */
+.juridico-services--alt {
+  background-color: #303F78;
+  max-width: 100%;
+  padding: 8rem 4rem;
+}
+
+.juridico-services__header {
+  margin-bottom: 4rem;
+  max-width: 600px;
+}
+
+.juridico-services__header p {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+/* Grid de Servicios */
+.juridico-services__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+/* Tarjeta de Servicio Individual */
+.juridico-service-card {
+  background-color: var(--color-bg-card);
+  padding: 2.5rem;
+  border-radius: 4px; /* Bordes rectos y limpios son más elegantes que los muy redondeados */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--color-border);
+  transition: var(--transition-smooth);
+}
+
+.juridico-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(28, 30, 33, 0.06);
+  border-color: rgba(197, 168, 128, 0.4);
+}
+
+.juridico-service-card__icon {
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.juridico-service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.juridico-service-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Variación Dark de Tarjetas (Sección Alquileres) */
+.juridico-service-card--dark {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+
+
+.juridico-services--alt .juridico-eyebrow {
+  color: #c5a880;
+}
+
+.juridico-services--alt h2,
+.juridico-services--alt h3 {
+  color: #ffffff;
+}
+
+.juridico-services--alt p {
+  color: rgba(255,255,255,.85);
+}
+
+.juridico-services--alt .juridico-service-card {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  backdrop-filter: blur(10px);
+}
+
+.juridico-services--alt .juridico-service-card h3 {
+  color: #ffffff;
+}
+
+.juridico-services--alt .juridico-service-card p {
+  color: rgba(255,255,255,.8);
+}
+
+.juridico-services--alt .juridico-service-card__icon {
+  color: #c5a880;
+}
+
+
+
+
+
+/* ==========================================================================
+   SECCIÓN DIFERENCIAL
+   ========================================================================== */
+.juridico-diferencial {
+  background-color: white;
+  padding: 8rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.juridico-diferencial__label {
+  position: sticky;
+  top: 100px;
+}
+
+.juridico-diferencial__items {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.juridico-diferencial__item {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.juridico-diferencial__num {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  opacity: 0.7;
+  padding-top: 0.2rem;
+}
+
+.juridico-diferencial__item h3 {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.juridico-diferencial__item p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   SECCIÓN CTA (Llamado a la acción)
+   ========================================================================== */
+.juridico-cta {
+  padding: 6rem 4rem;
+  background-color: var(--color-bg-light);
+}
+
+.juridico-cta__inner {
+  background-color: var(--color-bg-dark);
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 4rem;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.juridico-cta__inner h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.juridico-cta__inner p {
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+}
+
+/* Botón elegante */
+.juridico-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--color-accent);
+  color: var(--color-bg-dark);
+  text-decoration: none;
+  padding: 1rem 2.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+.juridico-cta__btn svg {
+  transition: transform 0.3s ease;
+}
+
+.juridico-cta__btn:hover {
+  background-color: var(--color-accent-hover);
+  color: #ffffff;
+}
+
+.juridico-cta__btn:hover svg {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   RESPONSIVE / MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .juridico-diferencial {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .juridico-diferencial__label {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .juridico-hero__title {
+    font-size: 2.5rem;
+  }
+  
+  .juridico-hero__stats {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .hero-stat__divider {
+    display: none;
+  }
+  
+  .juridico-services,
+  .juridico-services--alt,
+  .juridico-diferencial,
+  .juridico-cta {
+    padding: 4rem 1.5rem;
+  }
+  
+  .juridico-cta__inner {
+    padding: 3rem 1.5rem;
+  }
+  
+  .juridico-services__header h2,
+  .juridico-cta__inner h2 {
+    font-size: 2rem;
+  }
+}

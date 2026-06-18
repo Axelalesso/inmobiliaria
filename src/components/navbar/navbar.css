@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.2rem 6%;
+
+  background-color: #303F78;
+  backdrop-filter: blur(15px);
+
+  border-bottom: 1px solid rgba(184,150,62,.15);
+
+  transition: .3s ease;
+}
+
+
+/* LOGO */
+
+.logo-img {
+  height: 130px;
+  object-fit: contain;
+}
+
+/* LINKS */
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-items a {
+  position: relative;
+
+  text-decoration: none;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  transition: .3s;
+
+  padding: 0 20px;
+}
+
+
+.nav-items a:not(:last-child)::before {
+  content: "";
+
+  position: absolute;
+
+  right: -18px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 3px;
+  height: 18px;
+
+  background: #b8963e;
+  opacity: .5;
+}
+
+
+/* Línea dorada animada */
+
+.nav-items a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -8px;
+
+  width: 0%;
+  height: 2px;
+
+  background: #b8963e;
+
+  transition: .3s;
+}
+
+.nav-items a:hover {
+  color: #b8963e;
+}
+
+.nav-items a:hover::after {
+  width: 100%;
+}
+
+/* REDES */
+
+.nav-social {
+  display: flex;
+  gap: 18px;
+}
+
+.social-icon {
+  font-size: 1.3rem;
+
+  color: #ffffff;
+
+  transition: .3s;
+}
+
+.social-icon:hover {
+  color: #b8963e;
+  transform: translateY(-3px);
+}
+
+/* HAMBURGUESA */
+
+.menu-hamburguesa {
+  display: none;
+
+  font-size: 1.8rem;
+
+  cursor: pointer;
+
+  color: #1f1f1f;
+}
+
+/* MOBILE */
+
+.nav-social-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .menu-hamburguesa {
+    display: block;
+    color: #ffffff;
+    z-index: 9999;
+  }
+
+  .nav-social {
+    display: none;
+  }
+
+  .nav-items {
+    position: fixed;
+
+    top: 0;
+    right: -100%;
+
+    width: 85%;
+    height: 100vh;
+
+    background: #2e138d;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    transition: .4s ease;
+  }
+
+  .nav-items.open {
+    right: 0;
+  }
+
+  .nav-items a {
+    font-size: 1.1rem;
+  }
+
+  .nav-social-mobile {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .nav-social-mobile a {
+    color: #ffffff;
+    font-size: 1.6rem;
+  }
+
+
+  @media (max-width: 768px) {
+  .nav-items a::before {
+    display: none;
+  }
+}
+}

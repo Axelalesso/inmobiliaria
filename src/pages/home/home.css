@@ -1,0 +1,447 @@
+body {
+    margin: 0;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background: #1ebe5d;
+}
+
+/* EFECTO LATIDO (PRO) */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-float {
+  animation: pulse 2s infinite;
+}
+
+
+.why-section {
+  padding: 120px 8%;
+  background: #fff;
+}
+
+.why-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.why-header span {
+  color: #b8963e;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.why-header h2 {
+  margin-top: 15px;
+
+  font-size: clamp(2.5rem, 4vw, 4rem);
+
+  font-weight: 300;
+
+  color: #1f1f1f;
+
+  line-height: 1.2;
+}
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 25px;
+}
+
+.why-card {
+  padding: 35px;
+
+  
+
+  border: 1px solid rgba(184,150,62,.15);
+
+  transition: .3s;
+
+  background: url("https://53.fs1.hubspotusercontent-na1.net/hubfs/53/media/atencionclienteonline.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+  
+}
+
+
+.why-card-2 {
+  padding: 35px;
+
+
+
+  border: 1px solid rgba(184,150,62,.15);
+
+  transition: .3s;
+  
+  background: url("https://web-assets.esetstatic.com/wls/2019/09/Tests-Seguridad-Ingeniería-Social-aspectos-legales-tener-cuenta.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  
+}
+
+
+.why-card-3 {
+  padding: 35px;
+
+  
+
+  border: 1px solid rgba(184,150,62,.15);
+
+  transition: .3s;
+
+  background: url("https://img.magnific.com/premium-vector/legal-statement-concept-illustration_114360-25276.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  
+}
+
+.why-card-4 {
+  padding: 35px;
+
+  
+
+  border: 1px solid rgba(184,150,62,.15);
+
+  transition: .3s;
+
+  background: url("https://aprendamosmarketing.com/wp-content/uploads/2023/01/3-min-1024x538.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  
+}
+
+.why-card-5 {
+  padding: 35px;
+
+  
+
+  border: 1px solid rgba(184,150,62,.15);
+
+  transition: .3s;
+
+  background: url("https://www.amedi.org.mx/wp-content/uploads/2016/09/lupa-transparencia_111.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  
+}
+
+.why-card-6 {
+  padding: 35px;
+  font-family: "Inter", sans-serif;
+  
+
+  border: 1px solid rgba(184,150,62,.15);
+
+  transition: .3s;
+
+  background: url("https://vicushome.es/wp-content/uploads/2024/02/1o-ENTRADA.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+  
+}
+
+
+
+.why-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #b8963e;
+
+}
+
+.why-card-2:hover {
+  transform: translateY(-8px);
+
+  border-color: #b8963e;
+
+}
+
+.why-card-3:hover {
+  transform: translateY(-8px);
+
+  border-color: #b8963e;
+
+}
+
+.why-card-4:hover {
+  transform: translateY(-8px);
+
+  border-color: #b8963e;
+
+}
+
+.why-card-5:hover {
+  transform: translateY(-8px);
+
+  border-color: #b8963e;
+
+}
+
+.why-card-6:hover {
+  transform: translateY(-8px);
+
+  border-color: #b8963e;
+
+}
+
+.why-card h3 {
+  color: #1f1f1f;
+  font-family: "Inter", sans-serif;
+
+  margin-bottom: 15px;
+
+  font-size: 1.3rem;
+
+  font-weight: 500;
+}
+
+.why-card-2 h3 {
+  color: #1f1f1f;
+  font-family: "Inter", sans-serif;
+
+  margin-bottom: 15px;
+
+  font-size: 1.3rem;
+
+  font-weight: 500;
+}
+
+.why-card-3 h3 {
+  color: #1f1f1f;
+  font-family: "Inter", sans-serif;
+
+  margin-bottom: 15px;
+
+  font-size: 1.3rem;
+
+  font-weight: 500;
+}
+
+.why-card-4 h3 {
+  color: #1f1f1f;
+  font-family: "Inter", sans-serif;
+
+  margin-bottom: 15px;
+
+  font-size: 1.3rem;
+
+  font-weight: 500;
+}
+
+.why-card-5 h3 {
+  color: #1f1f1f;
+  font-family: "Inter", sans-serif;
+
+  margin-bottom: 15px;
+
+  font-size: 1.3rem;
+
+  font-weight: 500;
+}
+
+.why-card-6 h3 {
+  color: #1f1f1f;
+  font-family: "Inter", sans-serif;
+
+  margin-bottom: 15px;
+
+  font-size: 1.3rem;
+
+  font-weight: 500;
+}
+
+.why-card p {
+  font-family: "Inter", sans-serif;
+  color: #666;
+
+  line-height: 1.8;
+}
+
+.why-card-2 p {
+  font-family: "Inter", sans-serif;
+  color: #666;
+
+  line-height: 1.8;
+}
+
+.why-card-3 p {
+  font-family: "Inter", sans-serif;
+  color: #666;
+
+  line-height: 1.8;
+}
+
+.why-card-4 p {
+  font-family: "Inter", sans-serif;
+  color: #666;
+
+  line-height: 1.8;
+}
+
+.why-card-5 p {
+  font-family: "Inter", sans-serif;
+  color: #666;
+
+  line-height: 1.8;
+}
+
+.why-card-6 p {
+  font-family: "Inter", sans-serif;
+  color: #666;
+
+  line-height: 1.8;
+}
+
+
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+
+  gap: 80px;
+
+  padding: 120px 8%;
+
+  background: #303F78;
+}
+
+.about-tag {
+  display: inline-block;
+
+  color: #b8963e;
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  font-size: 13px;
+
+  margin-bottom: 20px;
+}
+
+.about-title {
+  font-size: clamp(3rem, 5vw, 5rem);
+
+  line-height: 1.05;
+
+  color: #fffdfd;
+
+  font-weight: 300;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text {
+  color: #ffffff;
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  margin-bottom: 25px;
+}
+
+.about-stats {
+  display: flex;
+
+  gap: 40px;
+
+  margin-top: 30px;
+
+  padding-top: 30px;
+
+  border-top: 1px solid rgba(184,150,62,.2);
+}
+
+.about-stat h3 {
+  font-size: 48px;
+
+  color: #b8963e;
+
+  font-weight: 400;
+
+  margin-bottom: 8px;
+}
+
+.about-stat span {
+  color: #ffffff;
+
+  font-size: 14px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+
+@media (max-width: 900px) {
+
+  .about-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 80px 5%;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+}

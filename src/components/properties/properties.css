@@ -1,0 +1,24 @@
+.props-section {
+  font-family: 'Inter', sans-serif;
+  padding: 6rem 4rem;
+}
+
+.props-grid {
+  display: grid;
+  font-family: 'Inter', sans-serif;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .props-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .props-grid {
+    grid-template-columns: 1fr;
+  }
+}
