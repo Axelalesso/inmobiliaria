@@ -46,303 +46,100 @@ body {
 
 
 .why-section {
-  padding: 120px 8%;
-  background: #fff;
+  padding: 4rem 2rem;
 }
 
 .why-header {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 3rem;
 }
 
 .why-header span {
-  color: #b8963e;
-  text-transform: uppercase;
-  letter-spacing: 3px;
   font-size: 13px;
+  font-weight: 500;
+  color: #c9a84c;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .why-header h2 {
-  margin-top: 15px;
-
-  font-size: clamp(2.5rem, 4vw, 4rem);
-
-  font-weight: 300;
-
-  color: #1f1f1f;
-
-  line-height: 1.2;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  line-height: 1.3;
 }
 
 .why-grid {
   display: grid;
-
-  grid-template-columns:
-    repeat(auto-fit, minmax(280px, 1fr));
-
-  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
 }
 
-.why-card {
-  padding: 35px;
-
-  
-
-  border: 1px solid rgba(184,150,62,.15);
-
-  transition: .3s;
-
-  background: url("https://53.fs1.hubspotusercontent-na1.net/hubfs/53/media/atencionclienteonline.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  overflow: hidden;
-  
-}
-
-
-.why-card-2 {
-  padding: 35px;
-
-
-
-  border: 1px solid rgba(184,150,62,.15);
-
-  transition: .3s;
-  
-  background: url("https://web-assets.esetstatic.com/wls/2019/09/Tests-Seguridad-Ingeniería-Social-aspectos-legales-tener-cuenta.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: "Inter", sans-serif;
-  overflow: hidden;
-  
-}
-
-
-.why-card-3 {
-  padding: 35px;
-
-  
-
-  border: 1px solid rgba(184,150,62,.15);
-
-  transition: .3s;
-
-  background: url("https://img.magnific.com/premium-vector/legal-statement-concept-illustration_114360-25276.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: "Inter", sans-serif;
-  overflow: hidden;
-  
-}
-
-.why-card-4 {
-  padding: 35px;
-
-  
-
-  border: 1px solid rgba(184,150,62,.15);
-
-  transition: .3s;
-
-  background: url("https://aprendamosmarketing.com/wp-content/uploads/2023/01/3-min-1024x538.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: "Inter", sans-serif;
-  overflow: hidden;
-  
-}
-
-.why-card-5 {
-  padding: 35px;
-
-  
-
-  border: 1px solid rgba(184,150,62,.15);
-
-  transition: .3s;
-
-  background: url("https://www.amedi.org.mx/wp-content/uploads/2016/09/lupa-transparencia_111.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: "Inter", sans-serif;
-  overflow: hidden;
-  
-}
-
+.why-card,
+.why-card-2,
+.why-card-3,
+.why-card-4,
+.why-card-5,
 .why-card-6 {
-  padding: 35px;
-  font-family: "Inter", sans-serif;
-  
-
-  border: 1px solid rgba(184,150,62,.15);
-
-  transition: .3s;
-
-  background: url("https://vicushome.es/wp-content/uploads/2024/02/1o-ENTRADA.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
   overflow: hidden;
-  
+  display: flex;
+  flex-direction: column;
+  background-color: #303F78;
 }
 
-
-
-.why-card:hover {
-  transform: translateY(-8px);
-
-  border-color: #b8963e;
-
+.why-card img,
+.why-card-2 img,
+.why-card-3 img,
+.why-card-4 img,
+.why-card-5 img,
+.why-card-6 img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
 }
 
-.why-card-2:hover {
-  transform: translateY(-8px);
-
-  border-color: #b8963e;
-
-}
-
-.why-card-3:hover {
-  transform: translateY(-8px);
-
-  border-color: #b8963e;
-
-}
-
-.why-card-4:hover {
-  transform: translateY(-8px);
-
-  border-color: #b8963e;
-
-}
-
-.why-card-5:hover {
-  transform: translateY(-8px);
-
-  border-color: #b8963e;
-
-}
-
-.why-card-6:hover {
-  transform: translateY(-8px);
-
-  border-color: #b8963e;
-
-}
-
-.why-card h3 {
-  color: #1f1f1f;
-  font-family: "Inter", sans-serif;
-
-  margin-bottom: 15px;
-
-  font-size: 1.3rem;
-
-  font-weight: 500;
-}
-
-.why-card-2 h3 {
-  color: #1f1f1f;
-  font-family: "Inter", sans-serif;
-
-  margin-bottom: 15px;
-
-  font-size: 1.3rem;
-
-  font-weight: 500;
-}
-
-.why-card-3 h3 {
-  color: #1f1f1f;
-  font-family: "Inter", sans-serif;
-
-  margin-bottom: 15px;
-
-  font-size: 1.3rem;
-
-  font-weight: 500;
-}
-
-.why-card-4 h3 {
-  color: #1f1f1f;
-  font-family: "Inter", sans-serif;
-
-  margin-bottom: 15px;
-
-  font-size: 1.3rem;
-
-  font-weight: 500;
-}
-
-.why-card-5 h3 {
-  color: #1f1f1f;
-  font-family: "Inter", sans-serif;
-
-  margin-bottom: 15px;
-
-  font-size: 1.3rem;
-
-  font-weight: 500;
-}
-
+.why-card h3,
+.why-card-2 h3,
+.why-card-3 h3,
+.why-card-4 h3,
+.why-card-5 h3,
 .why-card-6 h3 {
-  color: #1f1f1f;
-  font-family: "Inter", sans-serif;
-
-  margin-bottom: 15px;
-
-  font-size: 1.3rem;
-
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 1rem 1rem 0.35rem;
+  font-family:"Cormorant Garamond", serif;
+  color: #c9a84c;
 }
 
-.why-card p {
-  font-family: "Inter", sans-serif;
-  color: #666;
-
-  line-height: 1.8;
-}
-
-.why-card-2 p {
-  font-family: "Inter", sans-serif;
-  color: #666;
-
-  line-height: 1.8;
-}
-
-.why-card-3 p {
-  font-family: "Inter", sans-serif;
-  color: #666;
-
-  line-height: 1.8;
-}
-
-.why-card-4 p {
-  font-family: "Inter", sans-serif;
-  color: #666;
-
-  line-height: 1.8;
-}
-
-.why-card-5 p {
-  font-family: "Inter", sans-serif;
-  color: #666;
-
-  line-height: 1.8;
-}
-
+.why-card p,
+.why-card-2 p,
+.why-card-3 p,
+.why-card-4 p,
+.why-card-5 p,
 .why-card-6 p {
-  font-family: "Inter", sans-serif;
-  color: #666;
+  font-size: 13px;
+  color: #ffffff;
+  padding: 0 1rem 1rem;
+  line-height: 1.6;
+}
 
-  line-height: 1.8;
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 

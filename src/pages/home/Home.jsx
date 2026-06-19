@@ -53,14 +53,17 @@ function Home() {
       <div className="why-grid">
 
         <div className="why-card">
+          <img src="/img/atencioncliente.jpeg" alt="atencion personalizada" />
           <h3>Atención Personalizada</h3>
           <p>
             Cada cliente recibe asesoramiento
             adaptado a sus necesidades.
           </p>
         </div>
+        
 
         <div className="why-card-2">
+          <img src="/img/abogados.webp" alt="equipo juridico e inmobiliario" />
           <h3>Equipo Jurídico e Inmobiliario</h3>
           <p>
             Experiencia legal e inmobiliaria
@@ -69,6 +72,7 @@ function Home() {
         </div>
 
         <div className="why-card-3">
+          <img src="/img/seguridad-juridica.jpg" alt="seguridad legal" />
           <h3>Seguridad Legal</h3>
           <p>
             Analizamos cada operación para
@@ -77,6 +81,7 @@ function Home() {
         </div>
 
         <div className="why-card-4">
+          <img src="/img/marketing.jpg" alt="marketing inmobiliario" />
           <h3>Marketing Inmobiliario</h3>
           <p>
             Estrategias modernas para maximizar
@@ -85,6 +90,7 @@ function Home() {
         </div>
 
         <div className="why-card-5">
+          <img src="/img/claves-transparencia.jpg" alt="transparencia" />
           <h3>Transparencia</h3>
           <p>
             Comunicación clara y compromiso
@@ -93,6 +99,7 @@ function Home() {
         </div>
 
         <div className="why-card-6">
+          <img src="/img/legal.jpg" alt="acompañamiento integral" />
           <h3>Acompañamiento Integral</h3>
           <p>
             Desde la primera consulta hasta
