@@ -10,7 +10,7 @@ import './propertydetail.css';
 function PropertyDetail() {
   const { slug } = useParams();
   const property = properties.find(p => p.slug === slug);
-  const [mainImage, setMainImage] = useState(property?.imagenes?.[0] || "");
+  const [mainMedia, setMainMedia] = useState(property?.imagenes?.[0] || "");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   if (!property) {
@@ -23,16 +23,22 @@ function PropertyDetail() {
   const whatsappLink = `https://wa.me/${property.whatsappSoporte}?text=${mensajeWhatsapp}`;
 
   const handlePrev = () => {
-    const newIndex = (currentIndex - 1 + property.imagenes.length) % property.imagenes.length;
-    setCurrentIndex(newIndex);
-    setMainImage(property.imagenes[newIndex]);
-  };
+  const newIndex =
+    (currentIndex - 1 + property.imagenes.length) %
+    property.imagenes.length;
 
-  const handleNext = () => {
-    const newIndex = (currentIndex + 1) % property.imagenes.length;
-    setCurrentIndex(newIndex);
-    setMainImage(property.imagenes[newIndex]);
-  };
+  setCurrentIndex(newIndex);
+  setMainMedia(property.imagenes[newIndex]);
+};
+
+const handleNext = () => {
+  const newIndex =
+    (currentIndex + 1) %
+    property.imagenes.length;
+
+  setCurrentIndex(newIndex);
+  setMainMedia(property.imagenes[newIndex]);
+};
 
   return (
     <>
@@ -59,24 +65,59 @@ function PropertyDetail() {
           <div className="pd-gallery">
             <div className="pd-main-image-wrap">
               <button className="pd-arrow pd-arrow-left" onClick={handlePrev}>&#10094;</button>
-              <img src={mainImage} alt={property.nombre} className="pd-main-image" />
+                {mainMedia.endsWith(".mp4") ? (
+                  <video
+                     className="pd-main-image"
+                     controls
+                    autoPlay={false}
+                  >
+                  <source src={mainMedia} type="video/mp4" />
+                  </video>
+                ) : (
+                <img
+                  src={mainMedia}
+                  alt={property.nombre}
+                  className="pd-main-image"
+                />
+              )}
+
+
+
               <button className="pd-arrow pd-arrow-right" onClick={handleNext}>&#10095;</button>
             </div>
 
-            {property.imagenes && property.imagenes.length > 1 && (
-              <div className="pd-thumbnails">
-                {property.imagenes.map((img, index) => (
-                  <img
-                    key={index}
-                    src={img}
-                    alt={`Vista ${index + 1}`}
-                    className={`pd-thumb ${mainImage === img ? 'pd-thumb--active' : ''}`}
-                    onClick={() => { setMainImage(img); setCurrentIndex(index); }}
-                  />
-                ))}
-              </div>
-            )}
-          </div>
+            
+             <div className="pd-thumbnails">
+  {property.imagenes.map((media, index) => (
+    <div
+      key={index}
+      className={`pd-thumb-wrapper ${
+        currentIndex === index ? "pd-thumb--active" : ""
+      }`}
+      onClick={() => {
+        setMainMedia(media);
+        setCurrentIndex(index);
+      }}
+    >
+      {media.endsWith(".mp4") ? (
+        <>
+          <video
+            src={media}
+            muted
+            className="pd-thumb"
+          />
+          <span className="pd-video-icon">▶</span>
+        </>
+      ) : (
+        <img
+          src={media}
+          className="pd-thumb"
+          alt=""
+        />
+      )}
+    </div>
+  ))}
+</div>
 
           {/* RIGHT: Details Card */}
           <div className="pd-details-card">
@@ -132,19 +173,38 @@ function PropertyDetail() {
             )}
 
             {/* Thumbnail strip inside card */}
-            {property.imagenes && property.imagenes.length > 1 && (
-              <div className="pd-card-thumbs">
-                {property.imagenes.slice(0, 4).map((img, index) => (
-                  <img
-                    key={index}
-                    src={img}
-                    alt={`thumb ${index}`}
-                    className={`pd-card-thumb ${mainImage === img ? 'pd-card-thumb--active' : ''}`}
-                    onClick={() => { setMainImage(img); setCurrentIndex(index); }}
-                  />
-                ))}
-              </div>
-            )}
+           <div className="pd-card-thumbs">
+              {property.imagenes.slice(0, 4).map((media, index) => (
+                <div
+                  key={index}
+                  className={`pd-thumb-wrapper ${
+                    currentIndex === index ? "pd-thumb--active" : ""
+                  }`}
+                    onClick={() => {
+                   setMainMedia(media);
+        setCurrentIndex(index);
+      }}
+    >
+      {media.endsWith(".mp4") ? (
+        <>
+          <video
+            src={media}
+            muted
+            className="pd-card-thumb"
+          />
+          <span className="pd-video-icon">▶</span>
+        </>
+      ) : (
+        <img
+          src={media}
+          className="pd-card-thumb"
+          alt=""
+        />
+      )}
+    </div>
+  ))}
+</div>
+</div>
 
             {/* WhatsApp CTA */}
             <div className="pd-whatsapp-wrap">

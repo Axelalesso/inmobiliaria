@@ -18,6 +18,7 @@ El corazón de la propiedad es un espectacular jardín central parquizado con ca
       "/img/casa1-cocina.jpeg",
       "/img/casa1-comedor.jpeg",
       "/img/casa1-patio.jpeg",
+      "/videos/casa1.mp4",
     ],
     zona: "Sitravi, Tucumán",
     imagen:"/img/casa1.jpeg",
