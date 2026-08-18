@@ -9,6 +9,8 @@ import Sidebar from "../../components/sidebar/sidebar";
 import { useInView } from "react-intersection-observer";
 import HeroSlider from "../../components/heroslider/heroslider";
 
+import WhySection from "../whysection/whysection";
+
 import "./home.css";
 
 
@@ -38,144 +40,179 @@ function Home() {
         <Properties />
         <Services />
 
-        <section className="why-section">
-
-      <div className="why-header">
-        <span>¿Por qué elegirnos?</span>
-
-        <h2 id="eleginos" >
-          Más que una inmobiliaria,
-          <br />
-          un respaldo integral
-        </h2>
-      </div>
-
-      <div className="why-grid">
-
-        <div className="why-card">
-          <img src="/img/atencioncliente.jpeg" alt="atencion personalizada" />
-          <h3>Atención Personalizada</h3>
-          <p>
-            Cada cliente recibe asesoramiento
-            adaptado a sus necesidades.
-          </p>
-        </div>
-        
-
-        <div className="why-card-2">
-          <img src="/img/abogados.webp" alt="equipo juridico e inmobiliario" />
-          <h3>Equipo Jurídico e Inmobiliario</h3>
-          <p>
-            Experiencia legal e inmobiliaria
-            trabajando de manera integrada.
-          </p>
-        </div>
-
-        <div className="why-card-3">
-          <img src="/img/seguridad-juridica.jpg" alt="seguridad legal" />
-          <h3>Seguridad Legal</h3>
-          <p>
-            Analizamos cada operación para
-            brindar tranquilidad y respaldo.
-          </p>
-        </div>
-
-        <div className="why-card-4">
-          <img src="/img/marketing.jpg" alt="marketing inmobiliario" />
-          <h3>Marketing Inmobiliario</h3>
-          <p>
-            Estrategias modernas para maximizar
-            la visibilidad de cada propiedad.
-          </p>
-        </div>
-
-        <div className="why-card-5">
-          <img src="/img/claves-transparencia.jpg" alt="transparencia" />
-          <h3>Transparencia</h3>
-          <p>
-            Comunicación clara y compromiso
-            durante todo el proceso.
-          </p>
-        </div>
-
-        <div className="why-card-6">
-          <img src="/img/legal.jpg" alt="acompañamiento integral" />
-          <h3>Acompañamiento Integral</h3>
-          <p>
-            Desde la primera consulta hasta
-            la firma final.
-          </p>
-        </div>
-
-      </div>
-
-    </section>
+        <WhySection />
 
         
-      <section className="about-section">
 
-      <div className="about-left">
 
-        <span className="about-tag">
-          Sobre Nosotros
-        </span>
+    <section className="nosotros-section" id="nosotros">
 
-        <h2 id="nosotros" className="about-title">
-          Experiencia,
-          <br />
-          confianza y
-          <br />
-          respaldo jurídico
-        </h2>
+  <div className="nosotros-container">
+
+    <div className="nosotros-header">
+
+      <span className="nosotros-tag">
+        Nosotros
+      </span>
+
+      <h2 className="nosotros-title">
+        Una mirada profesional
+        <br />
+        sobre cada <span>propiedad.</span>
+      </h2>
+
+      <p className="nosotros-intro">
+        Inmobiliaria Díaz & Asociados nace con el propósito de brindar
+        un servicio inmobiliario diferente, basado en la confianza,
+        el asesoramiento profesional y la seguridad jurídica.
+      </p>
+
+    </div>
+
+
+    <div className="nosotros-content">
+
+      <div className="nosotros-text">
+
+        <h3>
+          Una forma diferente de
+          entender el mercado inmobiliario
+        </h3>
+
+        <p>
+          Nuestro enfoque combina la actividad inmobiliaria con una
+          sólida formación y experiencia en el ámbito del Derecho,
+          permitiendo acompañar a nuestros clientes de manera integral
+          en decisiones tan importantes como comprar, vender o alquilar
+          una propiedad.
+        </p>
+
+        <p>
+          Entendemos que detrás de cada inmueble existe un proyecto,
+          una inversión, una familia o una nueva etapa. Por eso,
+          buscamos que cada operación sea acompañada con claridad,
+          responsabilidad y atención personalizada.
+        </p>
+
+        <p>
+          Contemplamos tanto las necesidades del cliente como los
+          aspectos legales propios de cada operación.
+        </p>
 
       </div>
 
-      <div className="about-right">
 
-        <p className="about-text">
-          En Inmobiliaria Díaz & Asociados trabajamos
-          para brindar soluciones inmobiliarias y
-          jurídicas integrales, acompañando a cada
-          cliente con profesionalismo, transparencia
-          y compromiso.
+      <div className="nosotros-profile">
+
+        <h3>
+          Dra. Noelia Karina Díaz
+        </h3>
+
+        <div className="nosotros-profession">
+          Abogada · Escribana · Profesora de Derecho
+          <br />
+          Corredora Pública e Inmobiliaria
+        </div>
+
+        <p>
+          Con más de 10 años de experiencia en el ámbito jurídico,
+          la Dra. Noelia Karina Díaz integra su trayectoria profesional
+          con su actividad inmobiliaria, aportando una visión
+          especialmente orientada a la seguridad y el respaldo jurídico.
         </p>
 
-        <p className="about-text">
-          Nuestro equipo combina experiencia en el
-          mercado inmobiliario con asesoramiento
-          legal especializado, garantizando seguridad
-          en cada operación de compra, venta,
-          alquiler e inversión.
-        </p>
+        <div className="nosotros-formation">
 
-        <div className="about-stats">
-          <div className="about-stat">
-            <h3>
-                +30
-              </h3>
-                  <span>Años de experiencia</span>
-            </div>
+          <div className="nosotros-formation-title">
+            Formación profesional
+          </div>
 
-          <div className="about-stat">
-             <h3>
-      +100
-    </h3>
-    <span>Operaciones realizadas</span>
-  </div>
-
-  <div className="about-stat">
-    <h3>
-      
-      %100
-    </h3>
-    <span>Atención personalizada</span>
-  </div>
+          <p>
+            Cuenta con formación de posgrado en Derecho Societario,
+            Derecho Tributario, Derecho Administrativo y Redacción
+            de Sentencias, además de una Maestría en Formación de la
+            Magistratura, realizada en el marco de la Escuela Judicial
+            del Consejo Asesor de la Magistratura.
+          </p>
 
         </div>
 
       </div>
 
-    </section>
+    </div>
+    
+     <div className="about-location">
+
+  <div className="about-location-info">
+    <span className="about-location-tag">VISITANOS</span>
+
+    <h3>Nuestra oficina</h3>
+
+    <p>
+      Lamadrid 117 · Oficina 110
+      <br />
+      San Miguel de Tucumán, Tucumán
+    </p>
+  </div>
+
+  <div className="about-map">
+    <iframe
+      src="https://www.google.com/maps?q=Lamadrid+117,+San+Miguel+de+Tucumán,+Tucumán&output=embed"
+      width="100%"
+      height="400"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Ubicación de Inmobiliaria Díaz & Asociados"
+    ></iframe>
+  </div>
+
+</div>
+
+
+    <div className="nosotros-final">
+
+      <p>
+        Porque elegir una propiedad también es
+        <span> elegir con quién confiar </span>
+        una decisión importante.
+      </p>
+
+    </div>
+
+   
+
+
+
+  </div>
+
+</section>
+
+
+<section className="legal-disclaimer">
+  <div className="legal-disclaimer-container">
+
+    <h2>INFORMACIÓN LEGAL Y ADVERTENCIAS</h2>
+
+    <p>
+      Toda la información contenida en este sitio web es de carácter
+      orientativo y puede estar sujeta a modificaciones. Los precios,
+      la disponibilidad de unidades, las condiciones de financiación
+      y las actualizaciones contractuales pueden variar según el
+      contexto del mercado y la normativa legal vigente en el país.
+    </p>
+
+    <p>
+      Para obtener información precisa, actualizada y personalizada
+      al momento de tu decisión, es indispensable contactar con uno
+      de nuestros asesores comerciales.
+    </p>
+
+  </div>
+</section>
+
+
 
         <Footer />
       </div>

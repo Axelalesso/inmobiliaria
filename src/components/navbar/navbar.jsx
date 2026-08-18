@@ -5,6 +5,7 @@ import { FaInstagram,FaBars, FaTimes } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { HashLink } from "react-router-hash-link";
+import { IoIosMail } from "react-icons/io";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,17 @@ export default function Navbar() {
 
   // Función para cerrar el menú al hacer clic en un link
   const closeMenu = () => setIsOpen(false);
+
+
+  const whatsappNumber = "5493815475092";
+
+  const whatsappMessage = encodeURIComponent(
+    "¡Hola! Me gustaría recibir más información."
+  );
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+
 
   return (
     <nav className="navbar">
@@ -64,6 +76,9 @@ export default function Navbar() {
           <a href="https://www.linkedin.com/in/noelia-karina-diaz-1b7132246?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">
           <CiLinkedin className="social-icon"/>
         </a>
+        <a href="mailto:Inmobiliariadiazyasoc@gmail.com?subject=Consulta%20web&body=Hola,%20quiero%20consultar..." target="_blank" rel="noopener noreferrer">
+          <IoIosMail className="social-icon" />
+        </a>
         </div>
       </div>
 
@@ -76,7 +91,27 @@ export default function Navbar() {
         <a href="https://www.linkedin.com/in/noelia-karina-diaz-1b7132246?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">
           <CiLinkedin className="social-icon"/>
         </a>
+
+        <a href="mailto:Inmobiliariadiazyasoc@gmail.com?subject=Consulta%20web&body=Hola,%20quiero%20consultar..." target="_blank" rel="noopener noreferrer">
+          <IoIosMail className="social-icon" />
+        </a>
+
       </div>
+
+      <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-contact-btn"
+        >
+          <FaWhatsapp />
+          <span>Contactanos</span>
+        </a>
+
+      
+
+
+
     </nav>
   );
 }
