@@ -212,7 +212,8 @@
     position: fixed;
 
     top: 0;
-    right: -100%;
+    right: 0;
+    transform: translateX(100%);   /* oculto fuera de pantalla */
 
     width: 85%;
     height: 100vh;
@@ -230,6 +231,7 @@
 
   .nav-items.open {
     right: 0;
+    transform: translateX(0);   /* visible */
   }
 
   .nav-items a {
