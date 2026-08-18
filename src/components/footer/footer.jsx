@@ -20,7 +20,7 @@ function Footer() {
 
       <div className="footer-links">
         <a href="#propiedades">Propiedades</a>
-        <a href="#propiedades">Juridico</a>
+        <a href="#propiedades">Jurídico</a>
         <a href="#propiedades">Capacitaciones</a>
         <a href="#servicios">Contacto</a>
       </div>
