@@ -1,0 +1,500 @@
+/* =========================================
+   SERVICIOS
+========================================= */
+
+.compra-page {
+  background: #fff;
+  color: #152566;
+  font-family: "Inter", sans-serif;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.compra-hero {
+  min-height: 55vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 100px 8%;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(21, 37, 102, .98),
+      rgba(21, 37, 102, .85)
+    );
+
+  position: relative;
+  overflow: hidden;
+}
+
+.compra-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  right: -180px;
+  top: -150px;
+
+  border: 1px solid rgba(201, 168, 76, .25);
+
+  transform: rotate(45deg);
+}
+
+.compra-hero-content {
+  max-width: 800px;
+  position: relative;
+  z-index: 2;
+}
+
+.compra-eyebrow {
+  display: block;
+
+  color: #c9a84c;
+
+  font-size: .75rem;
+  font-weight: 600;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 25px;
+}
+
+.compra-hero h1 {
+  margin: 0;
+
+  color: #fff;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(4rem, 8vw, 7rem);
+
+  line-height: .9;
+
+  font-weight: 400;
+}
+
+.compra-hero h1 span {
+  color: #c9a84c;
+  font-style: italic;
+}
+
+.compra-hero p {
+  max-width: 600px;
+
+  margin-top: 35px;
+
+  color: rgba(255,255,255,.75);
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.compra-intro {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 110px 30px 80px;
+
+  text-align: center;
+}
+
+.compra-section-label {
+  color: #c9a84c;
+
+  font-size: .7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.compra-intro h2 {
+  margin: 20px 0;
+
+  font-family: "Cormorant Garamond", serif;
+
+  color: #152566;
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+
+  line-height: 1.05;
+
+  font-weight: 400;
+}
+
+.compra-intro p {
+  max-width: 650px;
+
+  margin: 25px auto 0;
+
+  color: #555;
+
+  line-height: 1.8;
+
+  font-size: 1rem;
+}
+
+
+/* =========================================
+   LISTA DE SERVICIOS
+========================================= */
+
+.compra-list {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 20px 30px 100px;
+}
+
+.compra-card {
+  display: grid;
+
+  grid-template-columns: 180px 1fr;
+
+  min-height: 380px;
+
+  margin-bottom: 35px;
+
+  background: #f7f7f7;
+
+  border: 1px solid rgba(21,37,102,.08);
+
+  transition: .4s ease;
+}
+
+.compra-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(201,168,76,.6);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.08);
+}
+
+
+/* Número */
+
+.compra-number {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  padding-top: 55px;
+
+  color: #c9a84c;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 5rem;
+
+  line-height: 1;
+}
+
+
+/* Contenido */
+
+.compra-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 60px 70px;
+
+  border-left: 1px solid rgba(21,37,102,.08);
+}
+
+.compra-label {
+  color: #c9a84c;
+
+  font-size: .7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.compra-content h2 {
+  margin: 15px 0 20px;
+
+  color: #152566;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 3.5rem;
+
+  font-weight: 400;
+}
+
+.compra-content p {
+  max-width: 750px;
+
+  color: #555;
+
+  font-size: 1rem;
+
+  line-height: 1.9;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.compra-whatsapp {
+  width: fit-content;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 13px 22px;
+
+  background: #152566;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 5px;
+
+  font-size: .85rem;
+
+  transition: .3s ease;
+}
+
+.compra-whatsapp svg {
+  font-size: 1.1rem;
+}
+
+.compra-whatsapp:hover {
+  background: #c9a84c;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   ALTERNAR SERVICIOS
+========================================= */
+
+.compra-card-reverse {
+  grid-template-columns: 1fr 180px;
+}
+
+.compra-card-reverse .compra-number {
+  order: 2;
+}
+
+.compra-card-reverse .compra-content {
+  order: 1;
+
+  border-left: none;
+
+  border-right: 1px solid rgba(21,37,102,.08);
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.compra-cta {
+  padding: 110px 30px;
+
+  background: #152566;
+
+  text-align: center;
+}
+
+.compra-cta span {
+  color: #c9a84c;
+
+  font-size: .7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.compra-cta h2 {
+  margin: 20px 0 15px;
+
+  color: white;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(3rem, 6vw, 5rem);
+
+  font-weight: 400;
+}
+
+.compra-cta p {
+  max-width: 600px;
+
+  margin: 0 auto 35px;
+
+  color: rgba(255,255,255,.7);
+
+  line-height: 1.8;
+}
+
+.compra-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px 30px;
+
+  background: #c9a84c;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 5px;
+
+  font-weight: 600;
+
+  transition: .3s;
+}
+
+.compra-cta-button:hover {
+  background: #b18f36;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .compra-hero {
+    min-height: 50vh;
+
+    padding: 80px 25px;
+  }
+
+  .compra-eyebrow {
+    font-size: .65rem;
+
+    letter-spacing: 2px;
+  }
+
+  .compra-hero h1 {
+    font-size: clamp(3.5rem, 16vw, 5rem);
+  }
+
+  .compra-hero p {
+    font-size: .95rem;
+  }
+
+
+  .compra-intro {
+    padding: 80px 25px 60px;
+  }
+
+  .compra-intro h2 {
+    font-size: 2.7rem;
+  }
+
+
+  .compra-list {
+    padding: 10px 18px 70px;
+  }
+
+
+  .compra-card,
+  .compra-card-reverse {
+    display: block;
+
+    min-height: auto;
+  }
+
+  .compra-number,
+  .compra-card-reverse .compra-number {
+    display: block;
+
+    padding: 25px 25px 0;
+
+    font-size: 3.5rem;
+
+    text-align: left;
+  }
+
+  .compra-content,
+  .compra-card-reverse .compra-content {
+    padding: 25px 25px 35px;
+
+    border: none;
+
+    display: block;
+  }
+
+  .compra-content h2 {
+    font-size: 2.8rem;
+  }
+
+  .compra-content p {
+    font-size: .9rem;
+
+    line-height: 1.8;
+  }
+
+  .compra-whatsapp {
+    width: 100%;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+  }
+
+
+  .compra-cta {
+    padding: 80px 25px;
+  }
+
+  .compra-cta h2 {
+    font-size: 3.2rem;
+  }
+
+  .compra-cta p {
+    font-size: .9rem;
+  }
+
+  .compra-cta-button {
+    width: 100%;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+  }
+
+}

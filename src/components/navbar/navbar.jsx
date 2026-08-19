@@ -43,7 +43,7 @@ export default function Navbar() {
       {/* ITEMS DE NAVEGACIÓN */}
       <div className={`nav-items ${isOpen ? "open" : ""}`}>
         <a href="/" onClick={closeMenu}>Inicio</a>
-        <a href="#propiedades" onClick={closeMenu}>Propiedades</a>
+        <a href="/propiedades" onClick={closeMenu}>Propiedades</a>
         
         <HashLink
           smooth

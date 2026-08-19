@@ -1,3 +1,7 @@
+/* =========================
+   SERVICIOS - SECCIÓN
+========================= */
+
 .services-section {
   padding: 6rem 4rem;
   background: black;
@@ -5,13 +9,178 @@
   color: white;
 }
 
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-tag {
+  display: inline-block;
+  color: #c9a84c;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 300;
+  color: white;
+}
+
+/* =========================
+   GRID DE SERVICIOS
+========================= */
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+  align-items: start;
 }
 
+/* =========================
+   CARD
+========================= */
+
 .service-card {
+  position: relative;
+  padding: 2rem;
+  cursor: pointer;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    transform .4s ease,
+    border-color .4s ease,
+    box-shadow .4s ease,
+    background .4s ease;
+
+  animation: fadeUp .8s ease forwards;
+  opacity: 0;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-color: #c9a84c;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+}
+
+.service-card.expanded {
+  border-color: #c9a84c;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Número */
+
+.service-num {
+  color: #c9a84c;
+  font-size: 3rem;
+  font-weight: 700;
+  transition: transform .4s ease;
+}
+
+.service-card:hover .service-num {
+  transform: scale(1.1);
+}
+
+/* Título */
+
+.service-name {
+  margin: 1rem 0 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: color .3s ease;
+}
+
+.service-card:hover .service-name,
+.service-card.expanded .service-name {
+  color: #c9a84c;
+}
+
+/* Detalle expandible */
+
+.service-desc {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 0;
+  transition:
+    max-height .35s ease,
+    opacity .3s ease,
+    margin-top .35s ease;
+}
+
+.service-card.expanded .service-desc {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 14px;
+}
+
+.service-desc p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, .8);
+  margin: 0;
+}
+
+/* Indicador + / − */
+
+.service-card::after {
+  content: "+";
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, .4);
+  transition: transform .3s ease, color .3s ease;
+}
+
+.service-card.expanded::after {
+  content: "−";
+  color: #c9a84c;
+  transform: rotate(180deg);
+}
+
+/* =========================
+   BOTÓN "VER MÁS"
+========================= */
+
+.services-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.services-btn {
+  background: #b8963e;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: .3s;
+}
+
+.services-btn:hover {
+  background: #9f8032;
+  transform: translateY(-2px);
+}
+
+
+.service-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
   padding: 2rem;
 
   border: 1px solid rgba(255,255,255,0.1);
@@ -37,81 +206,54 @@
 
   background: rgba(255,255,255,0.06);
 
-  box-shadow:
-    0 20px 40px rgba(0,0,0,.25);
+  box-shadow: 0 20px 40px rgba(0,0,0,.25);
 }
 
-.service-num {
+.service-link {
+  display: inline-block;
+  margin-top: 20px;
+
   color: #c9a84c;
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
 
-  transition: transform .4s ease;
+  transition: transform .3s ease;
 }
 
-.service-card:hover .service-num {
-  transform: scale(1.1);
-}
-
-/* Título */
-
-.service-card h3 {
-  margin: 1rem 0;
-  font-size: 1.3rem;
-
-  transition: color .3s ease;
-}
-
-.service-card:hover h3 {
-  color: #c9a84c;
-}
-
-/* Texto */
-
-.service-card p {
-  line-height: 1.7;
-  color: rgba(255,255,255,.8);
+.service-card:hover .service-link {
+  transform: translateX(5px);
 }
 
 
 
-.services-button-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.services-btn {
-  background: #b8963e;
-  color: white;
-  border: none;
-  padding: 14px 30px;
-  font-size: 15px;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: .3s;
-}
-
-.services-btn:hover {
-  background: #9f8032;
-  transform: translateY(-2px);
-}
 
 
-/* Animación de entrada */
+
+
+
+
+
+
+
+
+/* =========================
+   ANIMACIÓN DE ENTRADA
+========================= */
 
 @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(40px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
+/* =========================
+   TABLET GRANDE / LAPTOP CHICA
+========================= */
 
 @media (max-width: 1200px) {
   .services-section {
@@ -145,12 +287,17 @@
     font-size: 2.5rem;
   }
 
-  .service-card h3 {
+  .service-name {
     font-size: 1.2rem;
   }
 
-  .service-card p {
+  .service-desc p {
     font-size: 0.95rem;
+  }
+
+  .service-card::after {
+    top: 1.8rem;
+    right: 1.8rem;
   }
 
   .services-btn {
@@ -176,13 +323,19 @@
     font-size: 2rem;
   }
 
-  .service-card h3 {
+  .service-name {
     font-size: 1.1rem;
   }
 
-  .service-card p {
+  .service-desc p {
     font-size: 0.9rem;
     line-height: 1.6;
+  }
+
+  .service-card::after {
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.1rem;
   }
 
   .services-btn {

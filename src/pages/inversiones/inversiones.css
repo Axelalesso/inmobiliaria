@@ -1,0 +1,513 @@
+.inversiones-page {
+  background: #f8f7f4;
+  color: #1f1f1f;
+  font-family: "Inter", sans-serif;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.inversiones-hero {
+  min-height: 620px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, .82),
+      rgba(0, 0, 0, .58),
+      rgba(0, 0, 0, .2)
+    ),
+    url("/img/inversion.webp");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.inversiones-hero-content {
+  width: min(1100px, 90%);
+  margin: auto;
+
+  position: relative;
+  z-index: 2;
+
+  color: white;
+}
+
+.inversiones-eyebrow,
+.inversiones-section-header span,
+.inversiones-cta span {
+  color: #b8963e;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.inversiones-hero h1 {
+  max-width: 800px;
+
+  margin: 20px 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  line-height: .98;
+  font-weight: 500;
+}
+
+.inversiones-hero p {
+  max-width: 650px;
+
+  font-size: 1.08rem;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, .88);
+
+  margin-bottom: 35px;
+}
+
+.inversiones-btn,
+.inversiones-cta-btn {
+  display: inline-block;
+
+  padding: 15px 28px;
+
+  background: #b8963e;
+  color: white;
+
+  text-decoration: none;
+
+  font-size: .85rem;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition: .3s;
+}
+
+.inversiones-btn:hover,
+.inversiones-cta-btn:hover {
+  background: #96762c;
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+.inversiones-intro,
+.inversiones-proceso,
+.inversiones-integral {
+  width: min(1150px, 90%);
+  margin: auto;
+  padding: 110px 0;
+}
+
+.inversiones-section-header h2 {
+  margin: 15px 0 30px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.05;
+
+  font-weight: 500;
+}
+
+.inversiones-section-header.center {
+  text-align: center;
+}
+
+.inversiones-section-header.center p {
+  max-width: 700px;
+  margin: 0 auto 60px;
+
+  color: #666;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.inversiones-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+
+  align-items: center;
+}
+
+.inversiones-intro-text {
+  border-left: 2px solid #b8963e;
+  padding-left: 35px;
+}
+
+.inversiones-intro-text p {
+  color: #555;
+
+  line-height: 1.9;
+  font-size: 1rem;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.inversiones-proceso {
+  background: #fff;
+}
+
+.inversiones-cards {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+.inversion-card {
+  position: relative;
+
+  padding: 40px;
+
+  background: #faf9f6;
+
+  border: 1px solid rgba(184, 150, 62, .18);
+
+  transition: .35s;
+}
+
+.inversion-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #b8963e;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .07);
+}
+
+.inversion-card-wide {
+  grid-column: span 2;
+}
+
+.inversion-icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  background: #b8963e;
+  color: white;
+
+  font-size: 20px;
+}
+
+.inversion-number {
+  position: absolute;
+
+  top: 25px;
+  right: 30px;
+
+  color: rgba(184, 150, 62, .3);
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.inversion-card h3 {
+  margin-bottom: 18px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.inversion-card p {
+  color: #555;
+
+  line-height: 1.8;
+}
+
+.inversion-card ul {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.inversion-card li {
+  margin-bottom: 9px;
+
+  color: #555;
+
+  line-height: 1.5;
+}
+
+.inversion-card li::marker {
+  color: #b8963e;
+}
+
+
+/* =========================
+   RENTABILIDAD
+========================= */
+
+.rentabilidad {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+
+  margin: 25px 0;
+
+  padding: 18px;
+
+  background: white;
+
+  border-left: 3px solid #b8963e;
+}
+
+.rentabilidad span {
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.rentabilidad b {
+  color: #b8963e;
+}
+
+
+/* =========================
+   INTEGRAL
+========================= */
+
+.inversiones-integral {
+  background: #f8f7f4;
+}
+
+.integral-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+.integral-item {
+  padding: 35px;
+
+  background: white;
+
+  border-top: 2px solid #b8963e;
+
+  transition: .3s;
+}
+
+.integral-item:hover {
+  transform: translateY(-5px);
+}
+
+.integral-number {
+  color: #b8963e;
+
+  font-size: .8rem;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 25px;
+}
+
+.integral-item h3 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 2rem;
+
+  margin-bottom: 15px;
+}
+
+.integral-item p {
+  color: #666;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.inversiones-cta {
+  padding: 120px 20px;
+
+  background:
+    linear-gradient(
+      rgba(20, 20, 20, .92),
+      rgba(20, 20, 20, .92)
+    ),
+    url("/img/inversion-2.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+
+  text-align: center;
+}
+
+.inversiones-cta-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.inversiones-cta h2 {
+  margin: 20px 0;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+
+  line-height: 1;
+  font-weight: 500;
+}
+
+.inversiones-cta p {
+  max-width: 700px;
+
+  margin: 0 auto 35px;
+
+  color: rgba(255, 255, 255, .75);
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   DISCLAIMER
+========================= */
+
+.inversiones-disclaimer {
+  padding: 35px 20px;
+
+  background: #efeee9;
+
+  border-top: 1px solid rgba(184, 150, 62, .2);
+}
+
+.inversiones-disclaimer p {
+  max-width: 1000px;
+
+  margin: auto;
+
+  color: #666;
+
+  font-size: .85rem;
+
+  line-height: 1.7;
+
+  text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .inversiones-hero {
+    min-height: 550px;
+  }
+
+  .inversiones-intro {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .inversiones-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .inversion-card-wide {
+    grid-column: span 1;
+  }
+
+  .integral-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .inversiones-hero {
+    min-height: 600px;
+
+    background-position: 60% center;
+  }
+
+  .inversiones-hero h1 {
+    font-size: 3rem;
+  }
+
+  .inversiones-hero p {
+    font-size: .95rem;
+  }
+
+  .inversiones-intro,
+  .inversiones-proceso,
+  .inversiones-integral {
+    padding: 75px 0;
+  }
+
+  .inversiones-section-header h2 {
+    font-size: 2.7rem;
+  }
+
+  .inversiones-cards {
+    gap: 15px;
+  }
+
+  .inversion-card {
+    padding: 30px 25px;
+  }
+
+  .inversion-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .integral-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rentabilidad {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .rentabilidad b {
+    display: none;
+  }
+
+  .inversiones-cta {
+    padding: 90px 20px;
+  }
+
+  .inversiones-cta h2 {
+    font-size: 3rem;
+  }
+}

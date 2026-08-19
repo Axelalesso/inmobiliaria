@@ -1,0 +1,613 @@
+.tasaciones-page {
+  background: #fff;
+  color: #1f1f1f;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================
+  HERO
+========================= */
+
+.tasaciones-hero {
+  min-height: 620px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, .78),
+      rgba(0, 0, 0, .42),
+      rgba(0, 0, 0, .15)
+    ),
+    url("/img/tasacion.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.tasaciones-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 900px;
+  margin-left: 9%;
+  padding: 80px 30px;
+  color: white;
+}
+
+.tasaciones-eyebrow {
+  display: inline-block;
+
+  color: #b8963e;
+
+  font-size: .78rem;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.tasaciones-hero h1 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(3.5rem, 6vw, 6rem);
+  font-weight: 500;
+
+  line-height: .95;
+
+  margin: 0 0 30px;
+}
+
+.tasaciones-hero p {
+  max-width: 650px;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  color: rgba(255,255,255,.9);
+
+  margin-bottom: 35px;
+}
+
+.tasaciones-hero-btn,
+.tasaciones-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 15px 27px;
+
+  background: #b8963e;
+  color: white;
+
+  text-decoration: none;
+
+  font-size: .9rem;
+  font-weight: 600;
+
+  transition: .3s;
+}
+
+.tasaciones-hero-btn:hover,
+.tasaciones-cta-btn:hover {
+  background: #96772f;
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+.tasaciones-section-label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 60px;
+}
+
+.tasaciones-section-label span {
+  color: #b8963e;
+
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.tasaciones-section-label p {
+  margin: 0;
+
+  font-size: .75rem;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.tasaciones-intro {
+  max-width: 1200px;
+
+  margin: auto;
+  padding: 120px 30px;
+}
+
+.tasaciones-intro-content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 100px;
+}
+
+.tasaciones-intro h2,
+.tasaciones-analisis h2,
+.tasaciones-usos h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(2.8rem, 4vw, 4.5rem);
+  font-weight: 500;
+
+  line-height: 1;
+  margin: 0;
+}
+
+.tasaciones-intro-text {
+  font-size: .95rem;
+  line-height: 1.9;
+
+  color: #555;
+}
+
+.tasaciones-intro-text p {
+  margin-bottom: 25px;
+}
+
+
+/* =========================
+   ANALISIS
+========================= */
+
+.tasaciones-analisis {
+  background: #f7f6f3;
+
+  padding: 120px 7%;
+}
+
+.tasaciones-analisis-header {
+  max-width: 1200px;
+
+  margin: 0 auto 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 60px;
+}
+
+.tasaciones-analisis-header p {
+  max-width: 450px;
+
+  color: #666;
+
+  line-height: 1.8;
+}
+
+.tasaciones-grid {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1px;
+
+  background: #d8d4ca;
+}
+
+.tasacion-card {
+  background: #f7f6f3;
+
+  padding: 45px 35px;
+
+  min-height: 260px;
+
+  transition: .3s;
+}
+
+.tasacion-card:hover {
+  background: white;
+}
+
+.tasacion-number {
+  color: #b8963e;
+
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.tasacion-card h3 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  margin: 25px 0 15px;
+}
+
+.tasacion-card p {
+  color: #666;
+
+  font-size: .88rem;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   ESTRATÉGICA
+========================= */
+
+.tasaciones-estrategica {
+  background: #181818;
+  color: white;
+
+  padding: 130px 7%;
+}
+
+.tasaciones-estrategica-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tasaciones-estrategica h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 500;
+
+  line-height: .95;
+
+  margin: 0 0 30px;
+}
+
+.tasaciones-estrategica > div > p {
+  max-width: 600px;
+
+  color: #ccc;
+
+  line-height: 1.8;
+}
+
+.tasaciones-comparison {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  margin-top: 70px;
+}
+
+.comparison-item {
+  border-top: 1px solid rgba(184,150,62,.5);
+
+  padding-top: 25px;
+}
+
+.comparison-item span {
+  color: #b8963e;
+  font-size: .75rem;
+}
+
+.comparison-item h3 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 2rem;
+
+  margin: 15px 0;
+}
+
+.comparison-item p {
+  color: #aaa;
+
+  line-height: 1.8;
+}
+
+.tasaciones-highlight {
+  margin-top: 60px;
+
+  padding: 30px;
+
+  border-left: 3px solid #b8963e;
+
+  color: #ddd !important;
+}
+
+
+/* =========================
+   USOS
+========================= */
+
+.tasaciones-usos {
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 120px 30px;
+}
+
+.tasaciones-usos-header {
+  margin-bottom: 70px;
+}
+
+.tasaciones-usos-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.uso-card {
+  padding: 35px;
+
+  border: 1px solid rgba(184,150,62,.25);
+
+  transition: .3s;
+}
+
+.uso-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #b8963e;
+}
+
+.uso-card span {
+  color: #b8963e;
+
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.uso-card h3 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.9rem;
+
+  margin: 20px 0 15px;
+}
+
+.uso-card p {
+  color: #666;
+
+  font-size: .88rem;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   COMPROMISO
+========================= */
+
+.tasaciones-compromiso {
+  background: #f7f6f3;
+
+  padding: 120px 9%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 100px;
+}
+
+.tasaciones-compromiso h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 500;
+
+  line-height: .95;
+}
+
+.tasaciones-compromiso-right {
+  padding-top: 40px;
+}
+
+.tasaciones-compromiso-right > p {
+  color: #555;
+
+  line-height: 1.9;
+
+  max-width: 600px;
+}
+
+.tasaciones-compromiso-right ul {
+  list-style: none;
+
+  padding: 0;
+
+  margin-top: 40px;
+}
+
+.tasaciones-compromiso-right li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 20px;
+
+  font-size: .9rem;
+}
+
+.tasaciones-compromiso-right svg {
+  color: #b8963e;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.tasaciones-cta {
+  background:
+    linear-gradient(
+      rgba(0,0,0,.7),
+      rgba(0,0,0,.7)
+    ),
+    url("/img/tasacion-2.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 130px 30px;
+
+  text-align: center;
+
+  color: white;
+}
+
+.tasaciones-cta-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.tasaciones-cta h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(3rem, 5vw, 5rem);
+
+  font-weight: 500;
+
+  line-height: .95;
+
+  margin: 10px 0 30px;
+}
+
+.tasaciones-cta p {
+  max-width: 600px;
+
+  margin: 0 auto 35px;
+
+  color: #ddd;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .tasaciones-hero {
+    min-height: 600px;
+  }
+
+  .tasaciones-hero-content {
+    margin-left: 0;
+    padding: 50px 25px;
+  }
+
+  .tasaciones-intro-content,
+  .tasaciones-compromiso {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .tasaciones-analisis-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .tasaciones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tasaciones-usos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tasaciones-comparison {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .tasaciones-hero {
+    min-height: 550px;
+
+    background-position: 60% center;
+  }
+
+  .tasaciones-hero-content {
+    padding: 40px 20px;
+  }
+
+  .tasaciones-hero h1 {
+    font-size: 3.4rem;
+  }
+
+  .tasaciones-hero p {
+    font-size: .9rem;
+  }
+
+  .tasaciones-intro,
+  .tasaciones-usos {
+    padding: 80px 20px;
+  }
+
+  .tasaciones-analisis,
+  .tasaciones-estrategica,
+  .tasaciones-compromiso {
+    padding: 80px 20px;
+  }
+
+  .tasaciones-grid,
+  .tasaciones-usos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tasaciones-section-label {
+    margin-bottom: 40px;
+  }
+
+  .tasaciones-intro h2,
+  .tasaciones-analisis h2,
+  .tasaciones-usos h2 {
+    font-size: 3rem;
+  }
+
+  .tasaciones-compromiso h2 {
+    font-size: 3.5rem;
+  }
+
+  .tasaciones-cta {
+    padding: 90px 20px;
+  }
+
+  .tasaciones-cta h2 {
+    font-size: 3.3rem;
+  }
+
+}

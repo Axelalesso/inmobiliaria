@@ -6,6 +6,10 @@ import Capacitaciones from "./pages/capacitaciones/capacitaciones";
 import Propiedades from "./pages/propiedades/propiedades";
 import PropertyDetail from "./pages/propertydetail/propertydetail";
 import Contact from "./pages/contact/contact";
+import Compra from "./pages/compra/compra"
+import Consorcios from "./pages/consorcios/consorcios"
+import Inversiones from "./pages/inversiones/inversiones";
+import Tasacion from "./pages/tasacion/tasacion"
 
 function App() {
   return (
@@ -40,6 +44,26 @@ function App() {
       <Route
         path="/propiedad/:slug"
         element={<PropertyDetail />}
+      />
+
+      <Route
+        path="/compra"
+        element={<Compra />}
+      />
+
+      <Route
+        path="/consorcios"
+        element={<Consorcios />}
+      />
+
+      <Route
+        path="/inversiones"
+        element={<Inversiones />}
+      />
+
+      <Route
+        path="/tasacion"
+        element={<Tasacion />}
       />
 
     </Routes>

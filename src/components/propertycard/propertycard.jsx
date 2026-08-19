@@ -1,4 +1,6 @@
 import "./propertycard.css";
+import { Link } from "react-router-dom";
+
 
 function PropertyCard({ property }) {
   return (
@@ -49,6 +51,13 @@ function PropertyCard({ property }) {
         <div className="prop-price">
           {property.precio}
         </div>
+
+        <Link to={`/propiedad/${property.slug
+        }`} className="prop-btn">
+          Ver detalles
+        </Link>
+        
+
       </div>
     </div>
   );

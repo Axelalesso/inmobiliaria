@@ -1,23 +1,16 @@
 .hero{
+  position:relative;
   min-height:100vh;
-  display:grid;
-  grid-template-columns:1fr 1fr;
+  overflow:hidden;
   background:#0d0d0d;
 }
 
-.hero-left{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-
-  padding:0 7%;
-
-  background:#000080;
-}
-
+/* el video ahora es el fondo completo del hero */
 .hero-right{
-  position:relative;
-  overflow:hidden;
+  position:absolute;
+  inset:0; /* top:0; right:0; bottom:0; left:0; */
+  width:100%;
+  height:100%;
 }
 
 .hero-video{
@@ -26,8 +19,29 @@
   object-fit:cover;
 }
 
+/* overlay oscuro para contraste del texto */
+.hero-right::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg, rgba(0,0,0,.75) 0%, rgba(0,0,0,.35) 50%, rgba(0,0,0,.55) 100%);
+  /* ajustá el gradiente según dónde quieras que el texto tenga más contraste */
+}
+
+/* el texto se superpone encima del video */
+.hero-left{
+  position:relative;
+  z-index:2;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:0 7%;
+  background:transparent; /* ya no necesita fondo propio */
+}
+
 .hero-logo{
-  margin-left: 200px;
+  margin-left:0; /* quité el offset de 200px, raro en overlay */
   width:150px;
   margin-bottom:40px;
 }
@@ -47,6 +61,7 @@
   color:white;
   font-weight:300;
   margin-bottom:25px;
+  text-shadow:0 2px 12px rgba(0,0,0,.5); /* ayuda a legibilidad sobre video */
 }
 
 .hero-title span{
@@ -56,10 +71,11 @@
 
 .hero-sub{
   max-width:600px;
-  color:rgba(255,255,255,.75);
+  color:rgba(255,255,255,.85);
   line-height:1.8;
   font-size:18px;
   margin-bottom:40px;
+  text-shadow:0 1px 8px rgba(0,0,0,.4);
 }
 
 .hero-buttons{
@@ -76,28 +92,20 @@
 }
 
 .btn-secondary{
-  border:1px solid rgba(255,255,255,.2);
+  border:1px solid rgba(255,255,255,.4);
   color:white;
   text-decoration:none;
   padding:15px 30px;
   border-radius:6px;
+  backdrop-filter:blur(4px);
 }
 
 @media(max-width:900px){
-
-  .hero{
-    grid-template-columns:1fr;
-  }
-
-  .hero-right{
-    min-height:400px;
-    order:-1;
-  }
-
   .hero-left{
     padding:60px 30px;
     text-align:center;
     align-items:center;
+    min-height:100vh;
   }
 
   .hero-buttons{
