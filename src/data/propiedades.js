@@ -119,6 +119,7 @@ CONSULTANOS PARA MÁS INFORMACIÓN Y COORDINAR UNA VISITA..`,
       "/img/mono2-comedor.jpeg",
       "/img/mono2-banio.jpeg",
       "/img/mono2-piesa.jpeg",
+      "/videos/depto1.mp4",
     ],
     zona: "Moreno al 300, Tucumán",
     imagen:"/img/mono2-entrada.jpeg",
@@ -429,6 +430,132 @@ Encontramos el espacio ideal para el crecimiento de tu negocio.`,
     mapaUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.2866981483726!2d-65.20091652546049!3d-26.830832089785844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1b362ead9f%3A0x20fa8d324466c480!2sGeneral%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%20%26%20Balcarce%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1787322130611!5m2!1ses-419!2sar",
     whatsappSoporte: "5491123456789"
   },
-];
+  {
+    id: 12,
+    slug: "departamento-en-las-piedras",
+    tipo: "Departamento",
+    nombre: "✨ TU PRÓXIMO HOGAR TE ESPERA",
+    // Corregido: Usamos backticks (`) para permitir saltos de línea de forma segura
+    descripcion: `
+📍 Ubicación: Las Piedras al 650
+🌿 Zona tranquila y residencial
+🏡 CARACTERÍSTICAS
+🛏️ 2 habitaciones
+🍳 Cocina
+🍽️ Comedor
+🚿 1 baño
+🌿 Pequeño balcón contrafrente
+💰 VALORES
+Alquiler mensual: $700.000
+Expensas: $100.000
+📋 REQUISITOS
+✔️ Boleta con recibo de sueldo que duplique el valor del alquiler
+✔️ Garante
+✔️ Mes de curso
+✔️ Mes de garantía
+✔️ Mes de inmobiliaria
+📅 CONDICIONES DEL CONTRATO
+Duración: 2 años
+📈 Actualización cada 3 meses según el IPC
+COMERCIALIZA
+🏢 DÍAZ Y ASOCIADOS INMOBILIARIA
+CI 464
+📲 381 547 5092
+📍 Las Piedras al 650
+✨ VIVÍ TRANQUILO. VIVÍ MEJOR.`,
+    // Añadimos tus imágenes locales a la galería
+    imagenes: [
+      "/img/depto1.jpeg", 
+      "/img/depto2.jpeg",
+      "/img/depto3.jpeg",
+      "/img/depto4.jpeg",
+      "/img/depto5.jpeg",
+      
+    ],
+    zona: "Las Piedras al 650, Tucumán",
+    imagen:"/img/depto1.jpeg",
+    dormitorios: 2,
+    banos: 1,
+    cocina:1,
+    precio: " $700.000",
+    badge: "Alquiler",
+    mapaUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.171218268987!2d-65.21061353543078!3d-26.834505990031854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0e0cd0b20b%3A0xf2728335dbffcd59!2sCombate%20de%20Las%20Piedras%20650%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1788804208906!5m2!1ses-419!2sar"
+  },
 
+  {
+    id: 13,
+    slug: "local-comercial-en-centro",
+    tipo: "Local",
+    nombre: "LOCAL COMERCIAL EN ALQUILER PLENO CENTRO",
+    // Corregido: Usamos backticks (`) para permitir saltos de línea de forma segura
+    descripcion: `
+📍 San Martín y Balcarce – San Miguel de Tucumán
+Excelente oportunidad para instalar o expandir tu negocio en una de las esquinas con mayor circulación peatonal y vehicular de la ciudad.
+✨ Características principales:
+102 m² de superficie.
+Amplio salón comercial con vidriera al frente, ideal para una excelente exhibición de productos y máxima visibilidad.
+Subsuelo de gran tamaño, perfecto para depósito, stock o múltiples usos.
+Acceso por escalera.
+Baño instalado.
+Excelente iluminación y gran potencial para diversos rubros comerciales.
+Ideal para:
+✔️ Locales de indumentaria
+✔️ Tecnología y electrónica
+✔️ Showrooms
+✔️ Oficinas comerciales
+✔️ Franquicias
+✔️ Centros de estética o cualquier emprendimiento que requiera una ubicación estratégica. 
+💰 Valor 1.150.000
+📲 Consultas y visitas: 3815475092
+Inmobiliaria Díaz y Asociados
+Encontramos el espacio ideal para el crecimiento de tu negocio.`,
+    // Añadimos tus imágenes locales a la galería
+    imagenes: [
+      "/img/local1.jpeg", 
+      "/img/local1-parte1.jpeg",
+      "/img/local1-parte2.jpeg",
+      "/img/local1-parte3.jpeg",
+      "/img/local1-parte4.jpeg",
+      "/img/local1-parte5.jpeg",
+      "/img/local1-parte6.jpeg",
+    ],
+    zona: "San Martín y Balcarce , San Miguel de Tucumán",
+    imagen:"/img/local1.jpeg",
+    banos: 1,
+    precio: "1.150.000",
+    badge: "En Alquiler",
+    mapaUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.2866981483726!2d-65.20091652546049!3d-26.830832089785844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c1b362ead9f%3A0x20fa8d324466c480!2sGeneral%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%20%26%20Balcarce%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1787322130611!5m2!1ses-419!2sar",
+    whatsappSoporte: "5491123456789"
+  },
+
+  {
+    id: 14,
+    slug: "lote-en-praderas-del-nogal",
+    tipo: "Terreno",
+    nombre: "🌿✨ Construí la casa de tus sueños donde la naturaleza y la comodidad se encuentran! 🏡✨",
+    descripcion: `¿Te imaginás despertarte todos los días con vistas increíbles al cerro, rodeado de verde, paz y aire puro... pero a solo 20 minutos del centro de San Miguel de Tucumán? En el exclusivo Barrio Privado "Praderas del Nogal" (Los Nogales), ese estilo de vida que buscas es una realidad.
+✨ Características Destacadas
+Superficie: 300 m² listos para proyectar tu hogar familiar, tu casa de fin de semana o una inversión de alta revalorización.
+Entorno Único: Paisajes naturales imponentes, tranquilidad absoluta y seguridad privada.
+Documentación Impecable: ¡Listo para escriturar! 100% al día, sin deudas ni complicaciones.
+💳 Facilidades de Pago e Inversión
+Financiación a medida: ¡Consultá por nuestras flexibles opciones en cuotas!
+Propuestas razonables: Escuchamos tu oferta y nos adaptamos a tus posibilidades.
+📲 ¡No dejes pasar esta oportunidad! Consultá el precio o coordiná tu visita hoy mismo.
+Inmobiliaria: Díaz y Asociados — CI 464
+Contacto Directo / WhatsApp: 📲 381 547 5092
+Precio en USD 15.500`,
+    imagenes: [
+      "/img/terreno5.jpeg",
+      "/img/terreno5-parte2.jpeg",
+      "/img/terreno5-parte3.jpeg",
+    ],
+    zona: "Praderas del Nogal, Tucumán",
+    precio: "USD 15.500",
+    imagen:"/img/terreno5.jpeg",
+    badge: "En venta",
+    mapaUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11989.605897922751!2d-65.22576306105623!3d-26.69547313215012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942266ed8285bb99%3A0x3234fef7630866ab!2sBarrio%20Privado%20Praderas%20del%20Nogal!5e0!3m2!1ses-419!2sar!4v1788805202541!5m2!1ses-419!2sar",
+    whatsappSoporte: "5491123456789"
+  },
+];
 export default properties;
