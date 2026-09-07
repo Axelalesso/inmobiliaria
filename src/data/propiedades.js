@@ -478,7 +478,7 @@ CI 464
     banos: 1,
     cocina:1,
     precio: " $700.000",
-    badge: "Alquiler",
+    badge: "En Alquiler",
     mapaUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.171218268987!2d-65.21061353543078!3d-26.834505990031854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0e0cd0b20b%3A0xf2728335dbffcd59!2sCombate%20de%20Las%20Piedras%20650%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1788804208906!5m2!1ses-419!2sar"
   },
 
